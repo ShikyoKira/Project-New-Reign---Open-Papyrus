@@ -13,5 +13,177 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Pex">
+      <UniqueIdentifier>{42560d68-8343-45fd-863c-d7331e77d014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pex">
+      <UniqueIdentifier>{b65a5a23-98a8-4f9e-8f80-afa9963ffc5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pex\Writer">
+      <UniqueIdentifier>{45f07250-1513-4621-af1b-79964e4f886e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pex\Reader">
+      <UniqueIdentifier>{ef18cfb1-0b48-4725-aa1e-21b2cdfea7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pex\Writer">
+      <UniqueIdentifier>{c2e92fb8-9eaa-4a9c-bf38-797c4d9e2c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pex\Reader">
+      <UniqueIdentifier>{1b1ef747-0653-4768-a42e-0efba6059c01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexFile.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\DebugInfo.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexStringRef.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\StringTable.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\UserFlag.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexObject.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\ObjectData.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexValue.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexFunction.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexTime.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\reader\PexPscTranslator.h">
+      <Filter>Header Files\Pex\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexException.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\writer\PexAssembler.h">
+      <Filter>Header Files\Pex\Writer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\writer\Writer.h">
+      <Filter>Header Files\Pex\Writer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\reader\Import.h">
+      <Filter>Header Files\Pex\Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexFlag.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\VarType.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexLocal.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexStatement.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexCondition.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexIf.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexStringData.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexInstruction.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexVariable.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexReturn.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexDataType.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pex\PexAssignIdentifier.h">
+      <Filter>Header Files\Pex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pex\PexStringRef.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexString.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\ObjectData.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexException.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\StringTable.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexTime.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexFile.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\DebugInfo.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\reader\PexPscTranslator.cpp">
+      <Filter>Source Files\Pex\Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\writer\PexAssembler.cpp">
+      <Filter>Source Files\Pex\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\writer\Writer.cpp">
+      <Filter>Source Files\Pex\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\reader\Import.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\VarType.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexFunction.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\UserFlag.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexLocal.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexStatement.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexCondition.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexValue.cpp">
+      <Filter>Source Files\Pex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexInstruction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pex\PexIf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

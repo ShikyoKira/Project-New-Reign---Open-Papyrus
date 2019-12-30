@@ -18,6 +18,60 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Api.h" />
+    <ClInclude Include="src\pex\DebugInfo.h" />
+    <ClInclude Include="src\pex\PexAssignIdentifier.h" />
+    <ClInclude Include="src\pex\PexDataType.h" />
+    <ClInclude Include="src\pex\PexIf.h" />
+    <ClInclude Include="src\pex\PexCondition.h" />
+    <ClInclude Include="src\pex\PexFlag.h" />
+    <ClInclude Include="src\pex\PexFunction.h" />
+    <ClInclude Include="src\pex\ObjectData.h" />
+    <ClInclude Include="src\pex\PexException.h" />
+    <ClInclude Include="src\pex\PexFile.h" />
+    <ClInclude Include="src\pex\PexInstruction.h" />
+    <ClInclude Include="src\pex\PexReturn.h" />
+    <ClInclude Include="src\pex\PexStatement.h" />
+    <ClInclude Include="src\pex\PexLocal.h" />
+    <ClInclude Include="src\pex\PexObject.h" />
+    <ClInclude Include="src\pex\PexVariable.h" />
+    <ClInclude Include="src\pex\reader\Import.h" />
+    <ClInclude Include="src\pex\reader\PexPscTranslator.h" />
+    <ClInclude Include="src\pex\PexStringData.h" />
+    <ClInclude Include="src\pex\PexStringRef.h" />
+    <ClInclude Include="src\pex\PexValue.h" />
+    <ClInclude Include="src\pex\StringTable.h" />
+    <ClInclude Include="src\pex\PexTime.h" />
+    <ClInclude Include="src\pex\UserFlag.h" />
+    <ClInclude Include="src\pex\writer\PexAssembler.h" />
+    <ClInclude Include="src\pex\writer\Writer.h" />
+    <ClInclude Include="src\pex\VarType.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\pex\DebugInfo.cpp" />
+    <ClCompile Include="src\pex\ObjectData.cpp" />
+    <ClCompile Include="src\pex\PexCondition.cpp" />
+    <ClCompile Include="src\pex\PexException.cpp" />
+    <ClCompile Include="src\pex\PexFile.cpp" />
+    <ClCompile Include="src\pex\PexFunction.cpp" />
+    <ClCompile Include="src\pex\PexIf.cpp" />
+    <ClCompile Include="src\pex\PexInstruction.cpp" />
+    <ClCompile Include="src\pex\PexStatement.cpp" />
+    <ClCompile Include="src\pex\PexLocal.cpp" />
+    <ClCompile Include="src\pex\PexValue.cpp" />
+    <ClCompile Include="src\pex\reader\Import.cpp" />
+    <ClCompile Include="src\pex\reader\PexPscTranslator.cpp" />
+    <ClCompile Include="src\pex\PexString.cpp" />
+    <ClCompile Include="src\pex\PexStringRef.cpp" />
+    <ClCompile Include="src\pex\StringTable.cpp" />
+    <ClCompile Include="src\pex\PexTime.cpp" />
+    <ClCompile Include="src\pex\UserFlag.cpp" />
+    <ClCompile Include="src\pex\writer\PexAssembler.cpp" />
+    <ClCompile Include="src\pex\writer\Writer.cpp" />
+    <ClCompile Include="src\pex\VarType.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{44164449-0D00-4005-BE70-1838885B82C5}</ProjectGuid>
     <RootNamespace>ProjectNewReignOpenPapyrus</RootNamespace>
@@ -74,14 +128,24 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Qt\5.11.0\msvc2015\include\;C:\Program Files\boost\boost_1_70_0\msvc-14.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\Program Files\boost\boost_1_70_0\msvc-14.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Qt\5.11.0\msvc2015\include\;C:\Program Files\boost\boost_1_70_0\msvc-14.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\Program Files\boost\boost_1_70_0\msvc-14.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -109,8 +173,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
